@@ -16,7 +16,17 @@ const Menu = () => {
 
         <div className="bg-white rounded-lg shadow-xl p-8">
           <div className="w-full aspect-video">
-          <iframe width="800" height="600" src="https://www.youtube.com/embed/eeon9KJNrsY" title="Family Pie Menu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <video
+              className="w-full h-full rounded-lg"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+<iframe width="1484" height="600" src="https://www.youtube.com/embed/eeon9KJNrsY" title="Family Pie Menu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className="mt-8 text-center">
