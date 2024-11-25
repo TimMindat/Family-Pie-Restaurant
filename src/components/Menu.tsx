@@ -16,20 +16,7 @@ const Menu = () => {
 
         <div className="bg-white rounded-lg shadow-xl p-8">
           <div className="w-full aspect-video">
-            <video
-              className="w-full h-full rounded-lg"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source
-                src="https://drive.google.com/uc?export=download&id=1VxmMG-HBWmiuUMcTBvgn8Cfyy2xq3Ari"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+          <iframe width="1484" height="600" src="https://www.youtube.com/embed/eeon9KJNrsY" title="Family Pie Menu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <div className="mt-8 text-center">
