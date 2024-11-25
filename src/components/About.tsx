@@ -9,7 +9,7 @@ const About = () => {
           <div className="md:w-1/2">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+                src="https://lh3.googleusercontent.com/p/AF1QipMMPm-4KKbmtfLcG0w2GyCYpCzOSTHNc8FC6p1X=s680-w680-h510"
                 alt="Family Restaurant"
                 className="rounded-lg shadow-xl"
               />
