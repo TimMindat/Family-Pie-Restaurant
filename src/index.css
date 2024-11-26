@@ -2,10 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
+:root[dir="ltr"] body {
   font-family: 'Inter', sans-serif;
+}
+
+:root[dir="rtl"] body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+/* RTL Support */
+:root[dir="rtl"] .ltr-only {
+  display: none;
+}
+
+:root[dir="ltr"] .rtl-only {
+  display: none;
+}
+
+/* Number formatting */
+:root[dir="rtl"] .number {
+  unicode-bidi: embed;
+  direction: ltr;
 }

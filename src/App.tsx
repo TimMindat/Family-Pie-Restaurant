@@ -1,4 +1,5 @@
 import React from 'react';
+import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,18 +11,20 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Menu />
-        <Deals />
-        <OrderOnline />
-        <Social />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen">
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Menu />
+          <Deals />
+          <OrderOnline />
+          <Social />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

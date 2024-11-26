@@ -1,7 +1,11 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../utils/translations';
 
 const OrderOnline = () => {
+  const { language } = useLanguage();
+
   const platforms = [
     {
       name: "Take.App",
@@ -25,10 +29,10 @@ const OrderOnline = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Order Online with Ease!
+            {translations.orderOnlinePage.title[language]}
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            You can now enjoy Family Pie from the comfort of your home! Order through our trusted platforms.
+            {translations.orderOnlinePage.description[language]}
           </p>
         </div>
 
@@ -51,8 +55,8 @@ const OrderOnline = () => {
                   <div className="text-white text-center">
                     <h3 className="text-2xl font-bold mb-2">{platform.name}</h3>
                     <span className="inline-flex items-center">
-                      Order Now
-                      <ExternalLink className="ml-2 w-5 h-5" />
+                      {translations.deals.orderNow[language]}
+                      <ExternalLink className="mr-2 w-5 h-5" />
                     </span>
                   </div>
                 </div>
@@ -66,8 +70,8 @@ const OrderOnline = () => {
             href="https://wa.me/966558088546"
             className="inline-flex items-center bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-colors duration-200"
           >
-            Order via WhatsApp
-            <ExternalLink className="ml-2 w-5 h-5" />
+            {translations.orderOnlinePage.whatsappButton[language]}
+            <ExternalLink className="mr-2 w-5 h-5" />
           </a>
         </div>
       </div>

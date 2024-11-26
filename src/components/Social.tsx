@@ -1,7 +1,11 @@
 import React from 'react';
 import { Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../utils/translations';
 
 const Social = () => {
+  const { language } = useLanguage();
+
   const socialLinks = [
     {
       name: "Instagram",
@@ -34,10 +38,10 @@ const Social = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Stay Connected with Family Pie!
+            {translations.social.title[language]}
           </h2>
           <p className="text-lg text-gray-600">
-            Follow us on social media for the latest updates and special offers
+            {translations.social.description[language]}
           </p>
         </div>
 
