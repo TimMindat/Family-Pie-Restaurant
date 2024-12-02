@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ShoppingBag } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../utils/translations';
 
@@ -10,17 +10,26 @@ const OrderOnline = () => {
     {
       name: "Take.App",
       url: "https://take.app/familypie",
-      image: "https://images.unsplash.com/photo-1513104890138-7c749659a591"
+      image: "https://images.unsplash.com/photo-1513104890138-7c749659a591",
+      icon: ShoppingBag
+    },
+    {
+      name: "ToYou",
+      url: "https://toyou.io/merchant/b2735936-2137-4c3e-a647-4749931be6d0",
+      image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212",
+      icon: ShoppingBag
     },
     {
       name: "Marsool",
       url: "https://mrsool.co/stores/ChIJfR2l72sGuRURnhZxjfHWHvw/%D9%85%D8%B7%D8%B9%D9%85-%D8%A7%D9%84%D9%81%D8%B7%D9%8A%D8%B1%D9%87-alfateera",
-      image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212"
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38",
+      icon: ShoppingBag
     },
     {
       name: "HungerStation",
       url: "https://hungerstation.com/sa-ar/restaurant/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9/%D8%A7%D9%84%D8%AF%D9%88%D9%8A%D9%85%D8%A9/130812",
-      image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+      image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+      icon: ShoppingBag
     }
   ];
 
@@ -36,7 +45,7 @@ const OrderOnline = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {platforms.map((platform, index) => (
             <a
               key={index}
@@ -56,7 +65,7 @@ const OrderOnline = () => {
                     <h3 className="text-2xl font-bold mb-2">{platform.name}</h3>
                     <span className="inline-flex items-center">
                       {translations.deals.orderNow[language]}
-                      <ExternalLink className="mr-2 w-5 h-5" />
+                      <ExternalLink className="ml-2 w-5 h-5" />
                     </span>
                   </div>
                 </div>
@@ -68,10 +77,12 @@ const OrderOnline = () => {
         <div className="mt-12 text-center">
           <a
             href="https://wa.me/966558088546"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-colors duration-200"
           >
             {translations.orderOnlinePage.whatsappButton[language]}
-            <ExternalLink className="mr-2 w-5 h-5" />
+            <ExternalLink className="ml-2 w-5 h-5" />
           </a>
         </div>
       </div>

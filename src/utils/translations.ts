@@ -46,11 +46,15 @@ export const translations: Translations = {
     contact: {
       ar: 'اتصل بنا',
       en: 'Contact'
+    },
+    social: {
+      ar: 'تواصل معنا',
+      en: 'Social'
     }
   },
   hero: {
     description: {
-      ar: 'استمتع بمزيج مثالي من النكهات مع البيتزا المصنوعة يدويًا، والفطائر الشهية، والبرجر. يتم تحضيرها طازجة يوميًا لعائلتك.',
+      ar: 'استمتع بمزيج مثالي من النكهات مع البيتزا المصنوعة يدويًا، والفطائر الشهية، والبرجر العصيري. يتم تحضيرها طازجة يوميًا لعائلتك.',
       en: 'Experience the perfect blend of flavors with our handcrafted pizzas, savory pies, and juicy burgers. Made fresh daily for your family.'
     },
     whatsapp: {

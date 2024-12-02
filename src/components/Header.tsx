@@ -12,7 +12,6 @@ const Header = () => {
     { name: translations.navigation.home[language], href: '#home' },
     { name: translations.navigation.menu[language], href: '#menu' },
     { name: translations.navigation.deals[language], href: '#deals' },
-    { name: translations.navigation.orderOnline[language], href: '#order' },
     { name: translations.navigation.contact[language], href: '#contact' },
   ];
 
@@ -45,12 +44,16 @@ const Header = () => {
             <a
               href="https://wa.me/966558088546"
               className="flex items-center text-green-600 hover:text-green-700"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Phone className="w-5 h-5 mr-2" />
               <span>{translations.hero.whatsapp[language]}</span>
             </a>
             <a
-              href="https://take.app/familypie"
+              href="https://toyou.io/merchant/b2735936-2137-4c3e-a647-4749931be6d0"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 flex items-center ${
                 isRTL ? 'flex-row-reverse' : ''
               }`}
@@ -82,22 +85,6 @@ const Header = () => {
                 </a>
               ))}
               <LanguageToggle />
-              <a
-                href="https://wa.me/966558088546"
-                className="flex items-center text-green-600 hover:text-green-700"
-              >
-                <Phone className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-                <span>{translations.hero.whatsapp[language]}</span>
-              </a>
-              <a
-                href="https://take.app/familypie"
-                className={`bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 flex items-center justify-center ${
-                  isRTL ? 'flex-row-reverse' : ''
-                }`}
-              >
-                <ShoppingBag className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-                {translations.orderOnline[language]}
-              </a>
             </div>
           </div>
         )}
