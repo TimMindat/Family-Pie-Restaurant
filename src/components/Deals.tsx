@@ -2,6 +2,7 @@ import React from 'react';
 import { Tag, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../utils/translations';
+import { GiveawayBanner } from './giveaway/GiveawayBanner';
 
 const Deals = () => {
   const { language, isRTL } = useLanguage();
@@ -36,7 +37,9 @@ const Deals = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <GiveawayBanner />
+
+        <div className="grid md:grid-cols-3 gap-8 mt-16">
           {deals.map((deal, index) => (
             <div
               key={index}
