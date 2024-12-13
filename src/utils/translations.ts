@@ -114,8 +114,8 @@ export const translations: Translations = {
       en: "Upcoming Offers!"
     },
     description: {
-      ar: 'لا تفوت هذه العروض المذهلة',
-      en: "Don't miss out on these amazing offers"
+      ar: 'عروض حصرية ستطلق قريبًا',
+      en: "Stay Tuned for Exciting Deals!"
     },
     orderNow: {
       ar: 'اطلب الآن',

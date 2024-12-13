@@ -40,7 +40,7 @@ export const GiveawayBanner: React.FC = () => {
           
           <p className="text-2xl text-white mb-4 max-w-2xl">
             {language === 'ar'
-              ? 'شارك، وسم، وتابع لتحصل على بيتزا مجانية!'
+              ? 'شارك، منشن، وتابع صفحاتنا لتحصل على بيتزا مجانية!'
               : 'Share, Tag, and Follow to Claim Your Free Pizza!'}
           </p>
           
