@@ -54,7 +54,7 @@ export const translations: Translations = {
   },
   hero: {
     description: {
-      ar: 'استمتع بمزيج مثالي من النكهات مع البيتزا المصنوعة يدويًا، والفطائر الشهية، والبرجر العصيري. يتم تحضيرها طازجة يوميًا لعائلتك.',
+      ar: 'استمتع بمزيج مثالي من النكهات مع البيتزا المصنوعة يدويًا، والفطائر الشهية، والبرجر. يتم تحضيرها طازجة يوميًا لعائلتك.',
       en: 'Experience the perfect blend of flavors with our handcrafted pizzas, savory pies, and juicy burgers. Made fresh daily for your family.'
     },
     whatsapp: {
@@ -68,7 +68,7 @@ export const translations: Translations = {
       en: 'About Family Pie'
     },
     description: {
-      ar: 'في الفطيرة العائلية، نجمع العائلات معًا من خلال البيتزا الطازجة اللذيذة والفطائر الشهية والحلويات والبرجر العصيري. نقع في قلب المدينة المنورة، ونركز على الجودة والراحة والنكهات التي لا تُنسى!',
+      ar: 'في الفطيرة العائلية، نجمع العائلات معًا من خلال البيتزا الطازجة اللذيذة والفطائر الشهية والحلويات والبرجر. نقع في قلب المدينة المنورة، ونركز على الجودة والراحة والنكهات التي لا تُنسى!',
       en: 'At Family Pie, we bring families together with fresh, delicious pizzas, savory pies, sweet treats, and juicy burgers. Located in the heart of Madinah, we focus on quality, comfort, and unforgettable flavors!'
     },
     features: {
@@ -110,8 +110,8 @@ export const translations: Translations = {
   },
   deals: {
     title: {
-      ar: 'عروض اليوم المميزة!',
-      en: "Today's Special Deals!"
+      ar: 'العروض القادمة!',
+      en: "Upcoming Offers!"
     },
     description: {
       ar: 'لا تفوت هذه العروض المذهلة',
