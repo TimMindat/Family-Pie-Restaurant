@@ -31,7 +31,7 @@ const Hero = () => {
 
           <div className={`flex flex-col sm:flex-row gap-4 ${isRTL ? 'sm:flex-row-reverse' : ''}`}>
             <a
-              href="#menu"
+              href="/visual-menu"
               className={`bg-white text-orange-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center ${
                 isRTL ? 'flex-row-reverse' : ''
               }`}
