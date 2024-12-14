@@ -1,33 +1,30 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/Header';
 import MobileNav from './components/MobileNav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Menu from './components/Menu';
-import Deals from './components/Deals';
-import OrderOnline from './components/OrderOnline';
-import Social from './components/Social';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import MenuPage from './pages/MenuPage';
+import VisualMenuPage from './pages/VisualMenuPage';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen pb-16 md:pb-0">
-        <Header />
-        <main>
-          <Hero />
-          <About />
-          <Menu />
-          <Deals />
-          <OrderOnline />
-          <Social />
-        </main>
-        <Footer />
-        <MobileNav />
-      </div>
-    </LanguageProvider>
+    <BrowserRouter>
+      <LanguageProvider>
+        <div className="min-h-screen pb-16 md:pb-0">
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/menu" element={<MenuPage />} />
+            <Route path="/visual-menu" element={<VisualMenuPage />} />
+          </Routes>
+          <Footer />
+          <MobileNav />
+        </div>
+      </LanguageProvider>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

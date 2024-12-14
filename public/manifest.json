@@ -1,0 +1,16 @@
+{
+  "name": "Family Pie Restaurant",
+  "short_name": "Family Pie",
+  "description": "Best pizza and pies in Madinah",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff7ed",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/GumPsYq.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
